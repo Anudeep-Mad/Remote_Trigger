@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jobs.vmware.com.remote_trigger.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="VMWare Workflow Monitor"
+               android:textAlignment="center"
+               android:textIsSelectable="false"
+               android:textCursorDrawable="@dimen/fab_margin"
+               android:layout_margin="@dimen/fab_margin"
+               />
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/fab_margin"
+               android:textAlignment="center"
+               android:id="@+id/repo_list"
+               ></Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:hint="Username"
+                android:id="@+id/username"
+                android:inputType="text"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:gravity="center"/>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:text="Connect"
+               android:id="@+id/connect"/>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
